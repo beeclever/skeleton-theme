@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  /* Custom colors create classes like bg-brand-primary and text-brand-primary */
+  --color-brand-primary: #121212;
+  --color-brand-accent: #e53935;
+  --color-surface-muted: #f4f4f5;
+
+  /* Custom typography generates font-heading, font-body */
+  --font-heading: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  /* Custom spacing and radius scale */
+  --radius-card: 0.75rem;
+  --spacing-section: 4rem;
+
+  /* Custom breakpoints create variants like 3xl:flex */
+  --breakpoint-3xl: 120rem;
+}

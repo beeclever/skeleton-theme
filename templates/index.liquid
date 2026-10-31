@@ -2,4 +2,25 @@
   {% block 'hello-world' %}
     {% block 'liquid-tips', tips: ['hello_world.liquid_tips_1', 'hello_world.liquid_tips_2', 'hello_world.liquid_tips_3'] %}{% endblock %}
   {% endblock %}
+  <section class="bg-gray-100 py-12 md:py-20">
+    <div class="mx-auto max-w-screen-lg px-4 md:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-2xl font-bold leading-tight tracking-tight text-gray-900 sm:text-3xl lg:text-4xl">
+          Tailwind is working
+        </h2>
+
+        <div class="mt-4 text-base leading-relaxed text-gray-700 md:text-lg [&_a]:underline [&_a]:underline-offset-2 [&_p+p]:mt-3">
+          <p>If this paragraph has relaxed line height and grey text, utility classes are compiling.</p>
+          <p>Resize the window: the heading should grow at sm and lg, the padding at md. This <a href="#">link</a> should be underlined.</p>
+        </div>
+
+        <a
+          href="#"
+          class="mt-8 inline-block rounded-md bg-gray-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+        >
+          Hover me
+        </a>
+      </div>
+    </div>
+  </section>
 {% endblock %}
