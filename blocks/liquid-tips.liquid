@@ -26,9 +26,7 @@
   {% partial 'liquid-tip' %}
     {%- if tip_count > 0 -%}
       {%- assign index = seed | modulo: tip_count -%}
-      {%- for tip in tips limit: 1 offset: index -%}
-        <p class="highlight-description">{{ tip | t }}</p>
-      {%- endfor -%}
+      <p class="highlight-description">{{ tips[index] | t }}</p>
     {%- endif -%}
   {% endpartial %}
 
